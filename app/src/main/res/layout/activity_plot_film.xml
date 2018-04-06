@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kinoversionlast.plotFilm"
+    android:background="@color/colorDark">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/filmName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NameNameName:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/colorVeryLight"
+        android:gravity="center"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/filmImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сюжет"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/filmName"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorVeryLight"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/filmDescription"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:text="Сюжет:"
+        android:textColor="@color/colorLight"
+        app:layout_constraintTop_toTopOf="@+id/Description"
+        android:textSize="20sp" />
+</LinearLayout>
+
+
+</LinearLayout>
